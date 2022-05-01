@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 for (int i = 0; i < grass_array.length; i++){
-                    if(randomizedCharacter == grass_array[i]){
+                    int compare = Character.compare(randomizedCharacter, grass_array[i]);
+                    if(compare > 0){
                         answer.setText("Correct" + "");
                         break;
                     }
@@ -53,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                                      @Override
                                      public void onClick(View view) {
                                          for (int i = 0; i < sky_array.length; i++){
-                                             if(randomizedCharacter == sky_array[i]){
+                                             int compare = Character.compare(randomizedCharacter, sky_array[i]);
+                                             if(compare > 0){
                                                  answer.setText("Correct" + "");
                                                  break;
                                              }
@@ -72,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
                                      @Override
                                      public void onClick(View view) {
                                          for (int i = 0; i < root_array.length; i++){
-                                             if(randomizedCharacter == root_array[i]){
+                                             int compare = Character.compare(randomizedCharacter, root_array[i]);
+                                             if(compare > 0){
                                                  answer.setText("Correct" + "");
                                                  break;
                                              }
