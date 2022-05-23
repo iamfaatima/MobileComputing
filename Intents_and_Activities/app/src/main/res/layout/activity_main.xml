@@ -57,24 +57,24 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="300dp"
-        android:layout_height="159dp"
-        android:layout_marginStart="77dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="66dp"
         android:fontFamily="monospace"
         android:includeFontPadding="false"
-        android:text="Kids Learning Zone"
-        android:textAlignment="center"
+        android:text="Kids Learning"
+        android:textAllCaps="true"
         android:textColor="#F4DC09"
-        android:textSize="48sp"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/btn_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.737"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintVertical_bias="0.252" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

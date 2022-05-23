@@ -9,6 +9,9 @@
 
     <Button
         android:id="@+id/a"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="91dp"
@@ -25,25 +28,32 @@
 
     <Button
         android:id="@+id/b"
-        android:onClick="B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="88dp"
         android:layout_marginBottom="28dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="B"
         android:text="B"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/e"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/a"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:id="@+id/c"
         android:onClick="C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:text="C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,6 +66,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="D"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/e"
         app:layout_constraintHorizontal_bias="0.505"
@@ -69,15 +82,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="32dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:onClick="E"
         android:text="E"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/c"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/f"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:onClick="F"
         android:layout_width="wrap_content"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="24dp"
@@ -87,45 +108,59 @@
 
     <Button
         android:id="@+id/g"
-        android:onClick="G"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="G"
         android:text="G"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/j"
         app:layout_constraintEnd_toStartOf="@+id/h"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@+id/f"
         app:layout_constraintTop_toBottomOf="@+id/d"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintVertical_bias="0.717" />
 
     <Button
         android:id="@+id/h"
-        android:onClick="H"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:onClick="H"
         android:text="H"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/f"
         app:layout_constraintTop_toBottomOf="@+id/e" />
 
     <Button
         android:id="@+id/i"
-        android:onClick="I"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="I"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:text="I"
         app:layout_constraintBottom_toTopOf="@+id/l"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/j"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:onClick="J"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="J"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/m"
         app:layout_constraintEnd_toStartOf="@+id/k"
         app:layout_constraintHorizontal_bias="0.517"
@@ -135,21 +170,29 @@
 
     <Button
         android:id="@+id/k"
-        android:onClick="K"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_marginEnd="32dp"
+        android:onClick="K"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:text="K"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/i"
         app:layout_constraintTop_toBottomOf="@+id/h" />
 
     <Button
         android:id="@+id/l"
-        android:onClick="L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="308dp"
+        android:onClick="L"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:text="L"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
@@ -160,22 +203,28 @@
         android:id="@+id/m"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
-        android:text="M"
+        android:layout_marginTop="308dp"
         android:onClick="M"
-        app:layout_constraintEnd_toStartOf="@+id/q"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        android:text="M"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toStartOf="@+id/n"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toEndOf="@+id/l"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/n"
+        android:id="@+id/t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="192dp"
         android:layout_marginEnd="32dp"
-        android:text="N"
-        android:onClick="N"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="T"
+        android:text="T"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/k" />
 
@@ -186,8 +235,11 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
         android:text="O"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:onClick="O"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toBottomOf="@+id/l" />
 
     <Button
@@ -197,20 +249,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="P"
-        app:layout_constraintEnd_toStartOf="@+id/t"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/q"
         app:layout_constraintHorizontal_bias="0.517"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintStart_toEndOf="@+id/o"
         app:layout_constraintTop_toBottomOf="@+id/m" />
 
     <Button
-        android:id="@+id/q"
+        android:id="@+id/n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="Q"
-        android:onClick="Q"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="N"
+        android:text="N"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/l"
         app:layout_constraintTop_toBottomOf="@+id/k" />
 
     <Button
@@ -221,7 +281,10 @@
         android:layout_marginTop="28dp"
         android:text="R"
         android:onClick="Rr"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toBottomOf="@+id/o" />
 
     <Button
@@ -231,40 +294,53 @@
         android:layout_marginTop="28dp"
         android:text="S"
         android:onClick="S"
-        app:layout_constraintEnd_toStartOf="@+id/n"
+        android:textColor="#FED000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/t"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@+id/r"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintTop_toBottomOf="@+id/p" />
 
     <Button
-        android:id="@+id/t"
+        android:id="@+id/q"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
-        android:text="T"
-        android:onClick="T"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="Q"
+        android:text="Q"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q" />
+        app:layout_constraintTop_toBottomOf="@+id/n" />
 
     <Button
         android:id="@+id/u"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:text="U"
         android:onClick="U"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/r" />
 
+
     <Button
         android:id="@+id/v"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="V"
         android:onClick="V"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintEnd_toStartOf="@+id/w"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toEndOf="@+id/u"
@@ -272,6 +348,8 @@
 
     <Button
         android:id="@+id/w"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
@@ -279,15 +357,19 @@
         android:text="W"
         android:onClick="W"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t" />
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        app:layout_constraintTop_toBottomOf="@+id/q" />
 
     <Button
         android:id="@+id/x"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:text="X"
         android:onClick="X"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/u"
@@ -295,12 +377,15 @@
 
     <Button
         android:id="@+id/y"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Y"
         android:onClick="Y"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/z"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@+id/x"
         app:layout_constraintTop_toBottomOf="@+id/v"
@@ -313,8 +398,11 @@
         android:layout_marginEnd="32dp"
         android:text="Z"
         android:onClick="Z"
+        android:textColor="#FED000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/w"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:layout_constraintVertical_bias="0.241" />
 </androidx.constraintlayout.widget.ConstraintLayout>
