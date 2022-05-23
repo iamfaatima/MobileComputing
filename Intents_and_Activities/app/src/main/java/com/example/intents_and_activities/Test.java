@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Random;
 
 public class Test extends AppCompatActivity {
     TextView totalQuestionsTextView;
