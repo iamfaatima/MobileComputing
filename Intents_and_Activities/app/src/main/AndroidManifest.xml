@@ -93,7 +93,7 @@
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".Test"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -102,11 +102,11 @@
             </intent-filter>
         </activity>
 
-<!--        <activity-->
-<!--            android:name=".Test"-->
-<!--            android:exported="true">-->
+        <activity
+            android:name=".Test"
+            android:exported="true">
 
-<!--        </activity>-->
+        </activity>
 
     </application>
 

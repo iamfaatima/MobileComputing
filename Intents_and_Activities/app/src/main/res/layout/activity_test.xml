@@ -71,14 +71,15 @@
 
     <ImageView
         android:id="@+id/question"
-        android:layout_width="145dp"
-        android:layout_height="175dp"
+        android:layout_width="154dp"
+        android:layout_height="111dp"
         android:layout_above="@+id/choices_layout"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="151dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="46dp"
+        android:scrollbarSize="8dp"
         app:srcCompat="@drawable/a" />
 
 

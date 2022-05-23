@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class Test extends AppCompatActivity {
+public class Test extends AppCompatActivity implements View.OnClickListener {
     TextView totalQuestionsTextView;
     ImageView questionTextView;
     Button ansA, ansB, ansC, ansD;
@@ -48,9 +48,6 @@ public class Test extends AppCompatActivity {
         totalQuestionsTextView.setText("Total questions : "+totalQuestion);
 
         loadNewQuestion();
-
-
-
 
     }
 

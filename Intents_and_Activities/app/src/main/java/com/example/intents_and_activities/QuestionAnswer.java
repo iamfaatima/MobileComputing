@@ -39,16 +39,16 @@ public class QuestionAnswer {
 
     public static String choices[][] = {
             {"G","A","N","S"},
-            {"J","K","N","P"},
-            {"F","W","I","Y"},
+            {"B","K","N","P"},
+            {"F","C","I","Y"},
             {"G","D","U","R"}
     };
 
     public static String correctAnswers[] = {
             "A",
-            "K",
-            "Y",
-            "R"
+            "B",
+            "C",
+            "D"
     };
 
 }
