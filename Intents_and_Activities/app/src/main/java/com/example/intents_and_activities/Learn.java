@@ -25,15 +25,42 @@ public class Learn extends AppCompatActivity {
     ListView listView;
     String list[]= {"Aa", "Bb", "Cc", "Dd", "Ee", "Ff" , "Gg" , "Hh" , "Ii", "Jj","Kk" ,"Ll" , "Mm" ,"Nn" ,"Oo" ,"Pp" , "Qq" , "Rr" , "Ss" , "Tt" , "Uu" , "Vv" , "Ww" ,"Xx" , "Yy" , "Zz" };
     //Button a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+    int listIcon[]={
+            R.drawable.a,
+            R.drawable.b,
+            R.drawable.c,
+            R.drawable.d,
+            R.drawable.e,
+            R.drawable.f,
+            R.drawable.g,
+            R.drawable.h,
+            R.drawable.i,
+            R.drawable.j,
+            R.drawable.k,
+            R.drawable.l,
+            R.drawable.m,
+            R.drawable.n,
+            R.drawable.o,
+            R.drawable.p,
+            R.drawable.q,
+            R.drawable.r,
+            R.drawable.s,
+            R.drawable.t,
+            R.drawable.u,
+            R.drawable.v,
+            R.drawable.w,
+            R.drawable.x,
+            R.drawable.y,
+            R.drawable.z
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
         listView = findViewById(R.id.lst_view);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview, R.id.txt_view , list);
-
-        listView.setAdapter(arrayAdapter);
+//        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview, R.id.txt_view , list);
+//        listView.setAdapter(arrayAdapter);
 
         listView.setOnItemClickListener(new OnItemClickListener() {
             @Override
