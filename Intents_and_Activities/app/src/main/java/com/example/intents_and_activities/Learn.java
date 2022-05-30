@@ -5,10 +5,12 @@ import static android.view.View.*;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.printservice.CustomPrinterIconCallback;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView.OnItemClickListener;
@@ -61,6 +63,8 @@ public class Learn extends AppCompatActivity {
         listView = findViewById(R.id.lst_view);
 //        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview, R.id.txt_view , list);
 //        listView.setAdapter(arrayAdapter);
+        CustomAdapter ArrayAdapter = new CustomAdapter((Application) getApplicationContext(), list, listIcon);
+        listView.setAdapter(ArrayAdapter);
 
         listView.setOnItemClickListener(new OnItemClickListener() {
             @Override
