@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestDb</string>
+    <string name="StudentName">Student Name</string>
+    <string name="RollNumber">BSEF19A504</string>
+    <string name="ButtonViewAll">View All</string>
+    <string name="ButtonUpdate">Update</string>
+    <string name="ButtonDelete">Delete</string>
+    <string name="Add">Add</string>
+    <string name="IsEnrolled">Yes</string>
+</resources>
