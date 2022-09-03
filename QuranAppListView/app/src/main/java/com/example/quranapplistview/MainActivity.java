@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
+import com.example.quranapplistview.SurahModel;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         DBHelper helper=new DBHelper(MainActivity.this);
-        List<SurahModel> surahModels=helper.readSurah();
+        List<com.example.quranapplistview.SurahModel> surahModels=helper.readSurah();
         custom_surahAdapter adapter=new custom_surahAdapter(MainActivity.this, surahModels);
         surahlist.setAdapter(adapter);
         surahlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
