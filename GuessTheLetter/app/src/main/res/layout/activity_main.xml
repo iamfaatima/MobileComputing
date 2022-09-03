@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background= "@drawable/bg"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,6 +19,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.306" />
 
+
+    <Button
+        android:id="@+id/b_sky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Sky"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/b_grass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/b_grass"
+        app:layout_constraintTop_toTopOf="@+id/b_grass"
+        app:layout_constraintVertical_bias="0.459"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/b_root"
@@ -41,28 +56,14 @@
         android:layout_height="wrap_content"
         android:text="Grass"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/b_root"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_root"
         app:layout_constraintVertical_bias="0.459"
-        tools:ignore="MissingConstraints,NotSibling" />
-
-    <Button
-        android:id="@+id/b_sky"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="Sky"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toEndOf="@+id/b_grass"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/txt_ans"
