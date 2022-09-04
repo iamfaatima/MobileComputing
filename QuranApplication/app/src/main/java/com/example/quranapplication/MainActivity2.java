@@ -58,7 +58,8 @@ public class MainActivity2 extends AppCompatActivity {
                     return true;
                 }
                 else if(item.getItemId()==R.id.app_bar_search){
-
+                    Intent intent1=new Intent(MainActivity2.this, Search.class);
+                    startActivity(intent1);
                     return true;
                 }
                 else{
