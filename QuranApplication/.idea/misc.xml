@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranApplication/app/src/main/res/layout/activity_custom_ayaat.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/QuranApplication/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranApplication/app/src/main/res/layout/activity_para_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranApplication/app/src/main/res/layout/activity_search.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/QuranApplication/app/src/main/res/menu/para_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
