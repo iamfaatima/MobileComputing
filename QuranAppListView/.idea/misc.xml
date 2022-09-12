@@ -3,7 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_ar_para_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_ar_surah_list.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_book.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_chapter.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_eng_chap_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_eng_part_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_english.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_para.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_parah.xml" value="0.18" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_part.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_quran.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_surah.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_surat.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_urdu_parah_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/activity_urdu_surat_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/layout/header.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/QuranAppListView/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

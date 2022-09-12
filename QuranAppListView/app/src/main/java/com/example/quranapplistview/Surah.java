@@ -1,32 +1,86 @@
 package com.example.quranapplistview;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import com.example.quranapplistview.databinding.ActivityArParaListBinding;
+import com.example.quranapplistview.databinding.ActivityArSurahListBinding;
+import com.example.quranapplistview.databinding.ActivityParaBinding;
+import com.example.quranapplistview.databinding.ActivitySurahBinding;
 
 public class Surah extends AppCompatActivity {
-    ListView surahlist;
+
+    ActivitySurahBinding binding;
+    RecyclerView rcv;
+
+    DatabaseAccess dbAccess;
+    ArrayList<String> ArabicText, EngText, UrduText;
+    CustomAdapter1 ca;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surah);
-        Intent intent=getIntent();
-        surahlist=findViewById(R.id.ayaat_list);
-        DBHelper helper=new DBHelper(Surah.this);
-        List<Ayaat_Model> ayaat_modelList;
-        if(intent.getStringExtra("type").equals("Surah")) {
-            ayaat_modelList=helper.readAyah_surah(intent.getIntExtra("position", 0)+1);
+        binding = ActivitySurahBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        Intent i = getIntent();
+        int SurahId = i.getIntExtra("SurahId", 0);
+
+        SurahId = SurahId + 1;
+
+        rcv = findViewById(R.id.rcv);
+
+        dbAccess = DatabaseAccess.getInstance(getApplicationContext());
+
+        dbAccess.open();
+
+        ArabicText = new ArrayList<>();
+        EngText = new ArrayList<>();
+        UrduText = new ArrayList<>();
+
+        //ArrayList<String> list = dbAccess.GetPara(ParaId);
+
+        //ListAdapter2 listAdapter = new ListAdapter2(this, list);
+
+        //ArrayAdapter<StudentModel> arrayAdapter = new ArrayAdapter<StudentModel>
+        //(MainActivity.this, R.layout.list_item, R.id.NameMan, list);
+        //binding.ArParalv.setAdapter(listAdapter);
+
+        storeDataInArrays(SurahId);
+
+        Log.d("in", "hello");
+        ca = new CustomAdapter1(this, ArabicText, EngText, UrduText);
+        Log.d("in", ca.toString());
+        binding.rcv.setAdapter(ca);
+        binding.rcv.setLayoutManager(new LinearLayoutManager(this));
+
+        dbAccess.close();
+    }
+
+    void storeDataInArrays(int pId)
+    {
+        Cursor c = dbAccess.readSurahforRV(pId);
+        if(c.getCount() == 0)
+        {
+            Toast.makeText(this, "No Data", Toast.LENGTH_SHORT).show();
         }
         else
         {
-            ayaat_modelList=helper.readAyah_para(intent.getIntExtra("position", 0)+1);
+            while(c.moveToNext())
+            {
+                ArabicText.add(c.getString(0));
+                EngText.add(c.getString(1));
+                UrduText.add(c.getString(2));
+            }
         }
-        CustomAdapter adapter=new CustomAdapter(Surah.this, ayaat_modelList);
-        surahlist.setAdapter(adapter);
     }
 }
